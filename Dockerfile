@@ -1,7 +1,7 @@
 # -*- Dockerfile -*-
 
-FROM chadxz/asterisk:13
-MAINTAINER David M. Lee, II <dlee@respoke.io>
+FROM respoke/asterisk:13
+MAINTAINER Respoke <info@respoke.io>
 
 ENV CHAN_RESPOKE_VERSION=v1.0.0
 

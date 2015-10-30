@@ -8,16 +8,16 @@ latest chan_respoke channel driver.
 
 To build this image, just clone this repo and build using docker:
 
-    git clone https://github.com/chadxz/chan_respoke-docker.git
+    git clone https://github.com/respoke/chan_respoke-docker.git
     cd asterisk-docker
     docker build -t chan_respoke .
 
 More often though, you'll want to use the image built by this repo as a base for your 
 own image that needs Asterisk with chan_respoke. This repo is linked to the Docker hub at 
-[chadxz/chan_respoke][], so you can simply add this to the top of your own Dockerfile. An 
+[respoke/chan_respoke][], so you can simply add this to the top of your own Dockerfile. An 
 example extension from this docker image:
 
-    FROM chadxz/chan_respoke:13
+    FROM respoke/chan_respoke:13
     COPY configs/* /etc/asterisk/
 
 The tags follow the version of Asterisk used. Other tags available besides `13` are 
@@ -25,7 +25,7 @@ The tags follow the version of Asterisk used. Other tags available besides `13` 
 
 ## license
 
-[MIT](https://github.com/chadxz/chan_respoke-docker/blob/master/LICENSE)
+[MIT](https://github.com/respoke/chan_respoke-docker/blob/master/LICENSE)
 
-[chadxz/chan_respoke]: https://hub.docker.com/r/chadxz/chan_respoke/
+[respoke/chan_respoke]: https://hub.docker.com/r/respoke/chan_respoke/
 
