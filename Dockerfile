@@ -10,7 +10,7 @@ RUN mkdir -p /usr/src/chan_respoke && \
          tar --strip-components 1 -xz && \
     make all install && \
     install -m 644 example/sounds/respoke* /var/lib/asterisk/sounds/ && \
-    sed 's#^;dtls_cert_file=.*$#dtls_cert_file=/usr/etc/asterisk/keys/respoke.pem#' respoke.conf.sample > /usr/etc/asterisk/respoke.conf && \
+    sed 's#^;dtls_cert_file=.*$#dtls_cert_file=/etc/asterisk/keys/respoke.pem#' respoke.conf.sample > /etc/asterisk/respoke.conf && \
     rm -rf /usr/src/chan_respoke
 
 COPY entrypoint.sh /
