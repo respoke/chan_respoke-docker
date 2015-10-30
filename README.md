@@ -18,7 +18,7 @@ own image that needs Asterisk with chan_respoke. This repo is linked to the Dock
 example extension from this docker image:
 
     FROM chadxz/chan_respoke:13
-    COPY configs/* /usr/local/etc/asterisk/
+    COPY configs/* /usr/etc/asterisk/
 
 The tags follow the version of Asterisk used. Other tags available besides `13` are 
 `latest`, `13.5`, and `13.5.0`.
