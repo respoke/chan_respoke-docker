@@ -15,4 +15,4 @@ mkdir -p /etc/asterisk/keys
 cat /tmp/respoke.key /tmp/respoke.crt > /etc/asterisk/keys/respoke.pem
 rm -f /tmp/respoke.{key,csr,crt}
 
-exec "$@"
+exec /asterisk-docker-entrypoint.sh "$@"

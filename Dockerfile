@@ -16,6 +16,6 @@ RUN mkdir -p /usr/src/chan_respoke && \
 
 RUN echo "#include modules-respoke.conf" >> /etc/asterisk/modules.conf
 COPY conf/ /etc/asterisk/
-COPY entrypoint.sh /
-ENTRYPOINT ["/entrypoint.sh"]
+COPY chan_respoke-docker-entrypoint.sh /
+ENTRYPOINT ["/chan_respoke-docker-entrypoint.sh"]
 CMD ["/usr/sbin/asterisk", "-f"]
