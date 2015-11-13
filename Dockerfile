@@ -3,7 +3,7 @@
 FROM respoke/asterisk
 MAINTAINER Respoke <info@respoke.io>
 
-ENV CHAN_RESPOKE_VERSION=v1.0.0
+ENV CHAN_RESPOKE_VERSION=v1.1.0
 
 RUN mkdir -p /usr/src/chan_respoke && \
     cd /usr/src/chan_respoke && \
