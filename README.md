@@ -41,13 +41,8 @@ details on the template syntax.
 
 ## repo tags
 
-There are multiple tagged images pushed to Docker Hub corresponding to the base Asterisk
-version that chan_respoke has been installed into. The following tags are available:
-
-- `latest` - follows tip of the master tree. The bleeding edge.
-- `13` - receives minor and patch updates to Asterisk 13.
-- `13.5` - receives patch updates to Asterisk 13.5.
-- `13.5.0` - pinned to Asterisk 13.5.0.
+This Dockerfile follows respoke/asterisk:latest and will have tags for each tagged version
+on the corresponding `respoke/chan_respoke-docker` github repo.
 
 ## license
 

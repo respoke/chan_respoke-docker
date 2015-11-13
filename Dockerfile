@@ -1,6 +1,6 @@
 # -*- Dockerfile -*-
 
-FROM respoke/asterisk:13
+FROM respoke/asterisk
 MAINTAINER Respoke <info@respoke.io>
 
 ENV CHAN_RESPOKE_VERSION=v1.0.0
